@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="ro">
+<title>Unbreakable Machine</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+    body {
+        font-family: "Lato", sans-serif
+    }
+    
+    .mySlides {
+        display: none
+    }
+</style>
+
+<body>
+
+    <!-- Navbar -->
+    <div class="w3-top">
+        <div class="w3-bar w3-black w3-card">
+            <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+            <a href="#" class="w3-bar-item w3-button w3-padding-large">ACASA</a>
+            <a href="#desprenoi" class="w3-bar-item w3-button w3-padding-large w3-hide-small">DESPRE NOI</a>
+            <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hide-small">CONTACT</a>
+            <a href="#categorii" class="w3-bar-item w3-button w3-padding-large w3-hide-small">CATEGORII</a>
+            <a href="javascript:void(0)" class="w3-padding-large w3-hover-red w3-hide-small w3-right"><i class="fa fa-search"></i></a>
+        </div>
+    </div>
+
+    <!-- Navbar on small screens (remove the onclick attribute if you want the navbar to always show on top of the content when clicking on the links) -->
+    <div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
+        <a href="#desprenoi" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">DESPRE NOI</a>
+        <a href="#contact" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">CONTACT</a>
+        <a href="#categorii" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">CATEGORII</a>
+    </div>
+
+    <!-- Page content -->
+    <div class="w3-content" style="max-width:2000px;margin-top:46px;">
+
+        <!-- The Tour Section -->
+        <div class="w3-black" id="categorii">
+            <div class="w3-container w3-content w3-padding-64" style="max-width:800px">
+                <h2 class="w3-wide w3-center">CATEGORII</h2>
+                <p class="w3-opacity w3-center"><i>Modifica utilaje:</i></p><br>
+
+                <div class="w3-row-padding w3-padding-32" style="margin:0 -16px">
+                    <div class="w3-third w3-margin-bottom">
+                        <img src="Assets/Images/buldoexcavatoare.jpg" alt="Buldo excavatoare" style="width:100%" class="w3-hover-opacity">
+                        <div class="w3-container w3-white">
+                            <p><b>Buldo Excavatoare</b></p>
+                            <p class="w3-opacity">{nrBuldoExcv} utilaje disponibile</p>
+                            <p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+                            <button class="w3-button w3-black w3-margin-bottom" onclick="document.getElementById('veziUtilaje').style.display='block'">Vezi Utilaje</button>
+                        </div>
+                    </div>
+                    <div class="w3-third w3-margin-bottom">
+                        <img src="Assets/Images/buldozere.jpg" alt="Paris" style="width:100%" class="w3-hover-opacity">
+                        <div class="w3-container w3-white">
+                            <p><b>Buldozere</b></p>
+                            <p class="w3-opacity">{nrBuldo} utilaje disponibile</p>
+                            <p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+                            <button class="w3-button w3-black w3-margin-bottom" onclick="document.getElementById('veziUtilaje').style.display='block'">Vezi Utilaje</button>
+                        </div>
+                    </div>
+                    <div class="w3-third w3-margin-bottom">
+                        <img src="Assets/Images/excavatoare.jpg" alt="San Francisco" style="width:100%" class="w3-hover-opacity">
+                        <div class="w3-container w3-white">
+                            <p><b>Excavatoare</b></p>
+                            <p class="w3-opacity">{nrExcv} utilaje disponibile</p>
+                            <p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+                            <button class="w3-button w3-black w3-margin-bottom" onclick="document.getElementById('veziUtilaje').style.display='block'">Vezi Utilaje</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="w3-row-padding w3-padding-32" style="margin:0 -16px">
+                    <div class="w3-third w3-margin-bottom">
+                        <img src="Assets/Images/platforme.jpg" alt="New York" style="width:100%" class="w3-hover-opacity">
+                        <div class="w3-container w3-white">
+                            <p><b>Platforme</b></p>
+                            <p class="w3-opacity">{nrPlatforme} utilaje<br> disponibile</p>
+                            <p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+                            <button class="w3-button w3-black w3-margin-bottom" onclick="document.getElementById('veziUtilaje').style.display='block'">Vezi Utilaje</button>
+                        </div>
+                    </div>
+                    <div class="w3-third w3-margin-bottom">
+                        <img src="Assets/Images/Stivuitoare.jpg" alt="Paris" style="width:100%" class="w3-hover-opacity">
+                        <div class="w3-container w3-white">
+                            <p><b>Stivuitoare</b></p>
+                            <p class="w3-opacity">{nrStivuitoare} utilaje disponibile</p>
+                            <p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+                            <button class="w3-button w3-black w3-margin-bottom" onclick="document.getElementById('veziUtilaje').style.display='block'">Vezi Utilaje</button>
+                        </div>
+                    </div>
+                    <div class="w3-third w3-margin-bottom">
+                        <img src="Assets/Images/transpaleti.jpg" alt="San Francisco" style="width:100%" class="w3-hover-opacity">
+                        <div class="w3-container w3-white">
+                            <p><b>Transpaleți</b></p>
+                            <p class="w3-opacity">{nrTranspaleti} utilaje disponibile</p>
+                            <p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+                            <button class="w3-button w3-black w3-margin-bottom" onclick="document.getElementById('veziUtilaje').style.display='block'">Vezi Utilaje</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Ticket Modal -->
+        <div id="veziUtilaje" class="w3-modal">
+            <div class="w3-modal-content w3-animate-top w3-card-4">
+                <header class="w3-container w3-teal w3-center w3-padding-32">
+                    <span onclick="document.getElementById('veziUtilaje').style.display='none'" class="w3-button w3-teal w3-xlarge w3-display-topright">×</span>
+                    <h2 class="w3-wide"><i class="fa fa-pencil-square-o w3-margin-right"></i>Utilaje</h2>
+                </header>
+                <div class="w3-row-padding w3-padding-32" style="margin:0 -16px">
+                    <div class="w3-third w3-margin-bottom">
+                        <img src="Assets/Images/buldoexcavatoare.jpg" alt="Buldo excavatoare" style="width:100%" class="w3-hover-opacity">
+                        <div class="w3-container w3-white">
+                            <p><b>Liebherr</b></p>
+                            <p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+                            <button class="w3-button w3-black w3-margin-bottom" onclick="document.getElementById('cumparaUtilaje').style.display='block'">Închiriază</button>
+                        </div>
+                    </div>
+                    <div class="w3-third w3-margin-bottom">
+                        <img src="Assets/Images/buldozere.jpg" alt="Paris" style="width:100%" class="w3-hover-opacity">
+                        <div class="w3-container w3-white">
+                            <p><b>Volvo</b></p>
+                            <p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+                            <button class="w3-button w3-black w3-margin-bottom" onclick="document.getElementById('cumparaUtilaje').style.display='block'">Închiriază</button>
+                        </div>
+                    </div>
+                    <div class="w3-third w3-margin-bottom">
+                        <img src="Assets/Images/excavatoare.jpg" alt="San Francisco" style="width:100%" class="w3-hover-opacity">
+                        <div class="w3-container w3-white">
+                            <p><b>CAT</b></p>
+                            <p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+                            <button class="w3-button w3-black w3-margin-bottom" onclick="document.getElementById('cumparaUtilaje').style.display='block'">Închiriază</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="cumparaUtilaje" class="w3-modal">
+        <div class="w3-modal-content w3-animate-top w3-card-4">
+            <header class="w3-container w3-teal w3-center w3-padding-32">
+                <span onclick="document.getElementById('cumparaUtilaje').style.display='none'" class="w3-button w3-teal w3-xlarge w3-display-topright">×</span>
+                <h2 class="w3-wide"><i class="fa fa-pencil-square-o w3-margin-right"></i>Închiriază</h2>
+            </header>
+            <div class="w3-container">
+                <p><label><i class="fa fa-pencil-square-o "></i> <input class="w3-input w3-border" type="text" placeholder="Pret"></label></p>
+                <p><label><i class="fa fa-pencil-square-o "></i> <input class="w3-input w3-border" type="text" placeholder="Stoc"></label></p>
+                <button class="w3-button w3-block w3-teal w3-padding-16 w3-section w3-right">Modifica <i class="fa fa-check"></i></button>
+                <button class="w3-button w3-red w3-section" onclick="document.getElementById('cumparaUtilaje').style.display='none'">Închide <i class="fa fa-remove"></i></button>
+                <p class="w3-right">Ai nevoie de <a href="#" class="w3-text-blue">ajutor?</a></p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        
+        // Used to toggle the menu on small screens when clicking on the menu button
+        function myFunction() {
+            var x = document.getElementById("navDemo");
+            if (x.className.indexOf("w3-show") == -1) {
+                x.className += " w3-show";
+            } else {
+                x.className = x.className.replace(" w3-show", "");
+            }
+        }
+
+        // When the user clicks anywhere outside of the modal, close it
+        var modal = document.getElementById('veziUtilaje');
+        window.onclick = function(event) {
+                if (event.target == modal) {
+                    modal.style.display = "none";
+                }
+            }
+            // When the user clicks anywhere outside of the modal, close it
+        var modal = document.getElementById('cumparaUtilaje');
+        window.onclick = function(event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+    </script>
+
+</body>
+
+</html>
